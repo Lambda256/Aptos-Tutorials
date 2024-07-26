@@ -8,14 +8,20 @@ You can learn more details about this tutorial by clicking the link below.
 
 - [Go to Nodit Aptos Upgrading Module tutorials docs](https://developer.nodit.io/docs/upgrading-the-module)
 
-### Logic error in Message Module
+<br>
+<br>
+
+## Logic error in Message Module
 
 We already deployed a Message Module. But there is a logic error in set_message function.
 Under normal logic, the message_counter should increase every time the message is changed. However, in the current logic, the message_counter does not change even when the message is upgraded.
 
 So, we are going to upgrade our module and redeploy it.
 
-### Modify your module
+<br>
+<br>
+
+## Modify your module
 
 The only change in this code is the addition of a new set_message_with_message_counter function that modifies the message_counter logic below and marking the existing set_message function with #[deprecated] and modify test code.
 
@@ -77,26 +83,47 @@ module ownerAddress::message {
 }
 ```
 
-### Set up your profile
+<br>
+<br>
+
+## Set up your profile
 
 - To set up the owner account, you configure the profile.
 - Execute the following command in your terminal:
-  `$ aptos init --network testnet`
+
+```
+$ aptos init --network testnet
+```
 
 After that, input the private key of the owner account for the message module.
-`Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]`
+
+```
+Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]
+```
 
 Then you can set it as the owner account in your profile.
 
-### Compile and Publish new Message Module.
+<br>
+<br>
+
+## Compile and Publish new Message Module.
 
 The important thing is that nothing changes, including the Move.toml file, except for the additional function. If you delete any code, the publish will be failed.
 
 - Execute the following command in your terminal:
-  `$ aptos move compile `
-  `$ aptos move publish `
 
-### Checking The Module and change your message
+```
+$ aptos move compile
+```
+
+```
+$ aptos move publish
+```
+
+<br>
+<br>
+
+## Checking The Module and change your message
 
 - Checking The Module
 

@@ -32,34 +32,46 @@ You can learn more details about this tutorial by clicking the link below.
 
 - Input the Aptos Coin Transfer data and build a raw transaction.
 - Execute the following command in your terminal:
-  `$ ts-node 1.transactionBuilding.ts`
+  ```
+  $ ts-node 1.transactionBuilding.ts
+  ```
 
 ### Transaction Simulation (Optional)
 
 - To check the result of the transaction, you can simulate the transaction.
 - Execute the following command in your terminal:
-  ` $ ts-node 2.transactionSimulation.ts`
+  ```
+  $ ts-node 2.transactionSimulation.ts
+  ```
 
 ### Transaction Signing
 
 - The transaction is signed for submission to Aptos.
 - Execute the following command in your terminal:
-  ` $ ts-node 3.transactionSigning.ts`
+  ```
+  $ ts-node 3.transactionSigning.ts
+  ```
 
 ### Transaction Submission
 
 - Submit the transaction to Aptos.
 - Execute the following command in your terminal:
-  ` $ ts-node 4.transactionSubmission.ts`
+  ```
+  $ ts-node 4.transactionSubmission.ts
+  ```
 
 ### Transaction Result Verification
 
 - Check the result of the transaction committed by the validator.
 - Execute the following command in your terminal:
-  ` $ ts-node 5.transactionResult.ts`
+  ```
+  $ ts-node 5.transactionResult.ts
+  ```
 
 ### Using other Methods
 
 - You can also transfer your APT Coin to use other methods such as transferCoinTransaction, signAndSubmitTransactions.
 - Execute the following command in your terminal:
-  ` $ ts-node 6.otherMethod.ts`
+  ```
+  $ ts-node 6.otherMethod.ts
+  ```

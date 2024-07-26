@@ -12,20 +12,38 @@ You can learn more details about this tutorial by clicking the link below.
 
 - [Go to Nodit Aptos Account tutorials docs](https://developer.nodit.io/docs/creating-an-account)
 
-### Using generate
+<br>
+<br>
+
+## Using generate
 
 - Generate an account.
 - Execute the following command in your terminal:
-  `$ ts-node 1.generate.ts`
 
-### Using fromPrivateKey
+```
+$ ts-node 1.generate.ts
+```
+
+<br>
+<br>
+
+## Using fromPrivateKey
 
 - Generate an account from your private key.
 - Execute the following command in your terminal:
-  ` $ ts-node 2.fromPrivateKey.ts`
 
-### Using derivationPath
+```
+$ ts-node 2.fromPrivateKey.ts
+```
+
+<br>
+<br>
+
+## Using derivationPath
 
 - Generate an account using a mnemonic and HD wallet path.
 - Execute the following command in your terminal:
-  `$ ts-node 3.derivationPath.ts`
+
+```
+$ ts-node 3.derivationPath.ts
+```

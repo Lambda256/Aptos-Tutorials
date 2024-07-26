@@ -36,31 +36,56 @@ Node.js is a runtime environment that allows you to run JavaScript code, which i
 - [Download Node.js](https://nodejs.org/en/download/package-manager/current)
 
 You can verify the installation of Node.js by entering the following command in the terminal:
-`$ node -v`
-`v20.11.0`
+
+```
+$ node -v
+```
+
+```
+v20.11.0
+```
+
 <br>
 <br>
 
 **Install Packages**
 
 Once Node.js is installed, you need to install the packages required to run TypeScript. You can proceed with the installation using Node.js by entering the following commands in the terminal:
-`$ npm init`
-`$ npm install ts-node typescript`
-`$ tsc --init`
+
+```
+$ npm init
+```
+
+```
+$ npm install ts-node typescript
+```
+
+```
+$ tsc --init
+```
+
 <br>
 <br>
 
 **Install Aptos TypeScript SDK**
 
 Install the TypeScript SDK provided by the Aptos Foundation using Node.js. The TypeScript SDK allows you to conveniently use Aptos, such as creating an Aptos account and executing transactions. You can install it by entering the following command in the terminal:
-`$ npm install @aptos-labs/ts-sdk`
+
+```
+$ npm install @aptos-labs/ts-sdk
+```
+
 <br>
 <br>
 
 **Install Aptos Faucet Client**
 
 Install the Aptos Faucet Client provided by the Aptos Foundation using Node.js. This allows users to receive faucet tokens in Aptos Testnet and Devnet environments. You can install it by entering the following command in the terminal:
-`$ npm install @aptos-labs/aptos-faucet-client`
+
+```
+$ npm install @aptos-labs/aptos-faucet-client
+```
+
 <br>
 <br>
 
@@ -71,7 +96,10 @@ Aptos provides various methods for installing the CLI tailored to different oper
 - [Learn how to install Aptos CLI](https://aptos.dev/en/build/cli)
 
 Once the installation is complete, you can verify it by entering the following command in the terminal to view the help documentation.
-`$ aptos --help`
+
+```
+$ aptos --help
+```
 
 ```
 Command Line Interface (CLI) for developing and interacting with the Aptos blockchain

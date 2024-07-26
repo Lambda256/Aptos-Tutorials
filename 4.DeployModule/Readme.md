@@ -7,13 +7,18 @@ In this tutorial, you can learn about setting up the environment for deploying a
 You can learn more details about this tutorial by clicking the link below.
 
 - [Go to Nodit Aptos Deploy Module Tutorials Docs](https://developer.nodit.io/docs/deploying-a-module)
+  <br>
+  <br>
 
-### Process of Deploying a Module in This Tutorial
+## Process of Deploying a Module in This Tutorial
 
-    1.	Initialize your profile and modify the Move.toml
+1. **Initialize your profile and modify the Move.toml**
 
 - Initialize profile:
-  `$ aptos init --network testnet`
+
+```
+$ aptos init --network testnet
+```
 
 - Modify the Move.toml:
 
@@ -34,13 +39,25 @@ subdir = "aptos-move/framework/aptos-framework"
 [dev-dependencies]
 ```
 
-2. Compile message.move:
-   `$ aptos move compile`
+<br>
 
-3. Submit to Aptos:
-   `$ aptos move publish`
+2. **Compile message.move:**
 
-4. Check the deployed module:
+```
+$ aptos move compile
+```
+
+<br>
+
+3. **Submit to Aptos:**
+
+```
+$ aptos move publish
+```
+
+<br>
+
+4. **Check the deployed module:**
 
 ```
 curl --request GET \
@@ -51,18 +68,32 @@ curl --request GET \
 
 In this directory, all directories and modules are set. But you can follow the guide if you want to deploy your own module or understand the process of deploying a module in Aptos.
 
-### Set Up your own environment and deploy your module
+<br>
+<br>
 
-1. Generate your module directory:
-   `$ mkdir Message`
+## Set Up your own environment and deploy your module
 
-2. Initialize your profile and Move package
+1. **Generate your module directory:**
+
+```
+$ mkdir Message
+```
+
+<br>
+
+2. **Initialize your profile and Move package**
 
 - Initialize profile:
-  `$ aptos init --network testnet`
+
+```
+$ aptos init --network testnet
+```
 
 - Initialize Move environment:
-  `$ aptos move init --name your_project_name`
+
+```
+$ aptos move init --name your_project_name
+```
 
 Then your directory is set up like below:
 
@@ -76,14 +107,21 @@ Then your directory is set up like below:
 └── tests
 ```
 
-3. Generate your move file:
+<br>
+
+3. **Generate your move file:**
 
 ```
-  $ cd sources
-  $ touch message.move
+$ cd sources
 ```
 
-4. Write the message module
+```
+$ touch message.move
+```
+
+<br>
+
+4. **Write the message module**
 
 ```
 module ownerAddress::message {
@@ -129,7 +167,9 @@ module ownerAddress::message {
 
 There is a logic error in the set_message function. It will be modified in Tutorial 6.
 
-5. set up Move.toml:
+<br>
+
+5. **set up Move.toml:**
 
 ```
 [package]
@@ -148,13 +188,25 @@ subdir = "aptos-move/framework/aptos-framework"
 [dev-dependencies]
 ```
 
-6. Compile message.move:
-   `$ aptos move compile`
+<br>
 
-7. Submit to Aptos:
-   `$ aptos move publish`
+6. **Compile message.move:**
 
-8. Check the deployed module:
+```
+$ aptos move compile
+```
+
+<br>
+
+7. **Submit to Aptos:**
+
+```
+$ aptos move publish
+```
+
+<br>
+
+8. **Check the deployed module:**
 
 ```
 curl --request GET \
