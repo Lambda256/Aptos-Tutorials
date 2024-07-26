@@ -38,6 +38,7 @@ You can learn more details about this tutorial by clicking the link below.
   ```
   $ ts-node 1.transactionBuilding.ts
   ```
+  <br>
 
 ### Transaction Simulation (Optional)
 
