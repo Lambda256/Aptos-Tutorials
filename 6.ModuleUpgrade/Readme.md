@@ -6,7 +6,7 @@ You can interact with Module using Transaction.
 
 You can learn more details about this tutorial by clicking the link below.
 
-- [Go to Nodit Aptos Upgrading Module tutorials docs](https://developer.nodit.io/docs/upgrading-the-module)
+- [Go to Nodit Aptos Upgrading the Module tutorials docs](https://developer.nodit.io/docs/upgrading-the-module)
 
 <br>
 <br>

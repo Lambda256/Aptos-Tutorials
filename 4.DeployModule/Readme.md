@@ -6,7 +6,7 @@ In this tutorial, you can learn about setting up the environment for deploying a
 
 You can learn more details about this tutorial by clicking the link below.
 
-- [Go to Nodit Aptos Deploy Module Tutorials Docs](https://developer.nodit.io/docs/deploying-a-module)
+- [Go to Nodit Aptos Deploying a Module Tutorials Docs](https://developer.nodit.io/docs/deploying-a-module)
   <br>
   <br>
 
