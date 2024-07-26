@@ -1,4 +1,4 @@
-# Aptos faucet Tutorial
+# Aptos Faucet Tutorial
 
 ## What is a faucet?
 
