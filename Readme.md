@@ -13,6 +13,7 @@ Nodit Aptos Tutorials are structured as follows:
 7. Issuing a Fungible Asset
 
 By going through these steps, you will understand and conveniently use the Aptos blockchain. Learn Aptos with Nodit and create your Aptos Dapp using the Aptos Node and Indexer provided by Nodit!
+
 <br>
 
 ## Set up for Tutorials

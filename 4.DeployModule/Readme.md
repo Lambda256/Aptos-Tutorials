@@ -169,7 +169,7 @@ There is a logic error in the set_message function. It will be modified in Tutor
 
 <br>
 
-5. **set up Move.toml:**
+5. **Set up Move.toml:**
 
 ```
 [package]
