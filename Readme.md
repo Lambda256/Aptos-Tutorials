@@ -1,6 +1,7 @@
 # Nodit Aptos Tutorials
 
-Hello world! Welcome to the Nodit Aptos Tutorials! \n
+Hello world! Welcome to the Nodit Aptos Tutorials!
+<br>
 Nodit Aptos Tutorials are structured as follows:
 
 1. Creating an Account
