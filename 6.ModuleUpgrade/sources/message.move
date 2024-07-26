@@ -10,6 +10,7 @@ module ownerAddress::message {
 
   const ENO_MESSAGE: u64 = 0;
 
+  #[view]
   public fun get_message(message_owner : address) : string::String acquires Message {
     assert!(exists<Message>(message_owner), error::not_found(ENO_MESSAGE));
     borrow_global<Message>(message_owner).message
