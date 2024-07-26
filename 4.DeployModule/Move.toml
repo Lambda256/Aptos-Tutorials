@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-  ownerAddress = "258520e886bc5a019eb79f9af6ab0c75f0685165bcca4e670f382d5b107804cd"
+  ownerAddress = "input_your_address"
 [dev-addresses]
 
 [dependencies.AptosFramework]

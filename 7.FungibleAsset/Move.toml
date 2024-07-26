@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-  ownerAddress=""
+  ownerAddress="https://github.com/Lambda256/Aptos-Tutorials/"
 [dev-addresses]
 
 [dependencies.AptosFramework]
