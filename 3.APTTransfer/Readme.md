@@ -28,6 +28,9 @@ You can learn more details about this tutorial by clicking the link below.
 
 - [Go to Nodit Aptos APT Transfer tutorials docs](https://developer.nodit.io/docs/sending-apt-coin)
 
+<br>
+<br>
+
 ### Transaction Build
 
 - Input the Aptos Coin Transfer data and build a raw transaction.
@@ -43,6 +46,7 @@ You can learn more details about this tutorial by clicking the link below.
   ```
   $ ts-node 2.transactionSimulation.ts
   ```
+  <br>
 
 ### Transaction Signing
 
@@ -51,6 +55,7 @@ You can learn more details about this tutorial by clicking the link below.
   ```
   $ ts-node 3.transactionSigning.ts
   ```
+  <br>
 
 ### Transaction Submission
 
@@ -59,6 +64,7 @@ You can learn more details about this tutorial by clicking the link below.
   ```
   $ ts-node 4.transactionSubmission.ts
   ```
+  <br>
 
 ### Transaction Result Verification
 
@@ -67,6 +73,7 @@ You can learn more details about this tutorial by clicking the link below.
   ```
   $ ts-node 5.transactionResult.ts
   ```
+  <br>
 
 ### Using other Methods
 

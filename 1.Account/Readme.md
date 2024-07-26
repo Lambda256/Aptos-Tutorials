@@ -13,7 +13,6 @@ You can learn more details about this tutorial by clicking the link below.
 - [Go to Nodit Aptos Account tutorials docs](https://developer.nodit.io/docs/creating-an-account)
 
 <br>
-<br>
 
 ## Using generate
 
@@ -25,7 +24,6 @@ $ ts-node 1.generate.ts
 ```
 
 <br>
-<br>
 
 ## Using fromPrivateKey
 
@@ -36,7 +34,6 @@ $ ts-node 1.generate.ts
 $ ts-node 2.fromPrivateKey.ts
 ```
 
-<br>
 <br>
 
 ## Using derivationPath

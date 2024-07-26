@@ -9,7 +9,6 @@ You can learn more details about this tutorial by clicking the link below.
 - [Go to Nodit Aptos Fungible Asset tutorials docs](https://developer.nodit.io/docs/fungible-asset)
 
 <br>
-<br>
 
 ## Set up your profile
 
@@ -21,7 +20,6 @@ $ aptos init --network testnet
 ```
 
 <br>
-<br>
 
 ## Deploy Module
 
@@ -32,9 +30,8 @@ $ aptos move publish
 ```
 
 <br>
-<br>
 
-## function call
+## Function call
 
 - Mint the fungible asset and store it in the sender’s account.
 - Execute the following command in your terminal:

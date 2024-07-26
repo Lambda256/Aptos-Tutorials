@@ -104,7 +104,6 @@ Enter your private key as a hex literal (0x...) [Current: None | No input: Gener
 Then you can set it as the owner account in your profile.
 
 <br>
-<br>
 
 ## Compile and Publish new Message Module.
 
@@ -120,7 +119,6 @@ $ aptos move compile
 $ aptos move publish
 ```
 
-<br>
 <br>
 
 ## Checking The Module and change your message

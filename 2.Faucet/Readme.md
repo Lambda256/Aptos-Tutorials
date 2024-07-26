@@ -9,7 +9,6 @@ You can learn more details about this tutorial by clicking the link below.
 - [Go to Nodit Aptos Faucet tutorials docs](https://developer.nodit.io/docs/receiving-faucet)
 
 <br>
-<br>
 
 ## Using fundAccount
 
