@@ -13,6 +13,9 @@ You can learn more details about this tutorial by clicking the link below.
 ## setMessage
 
 - set up your Message:
+  > **Note:**
+  >
+  > You must use the same account that deployed the Message Module. Therefore, please set the Private Key of the account that deployed the Message Module in the .env file.
 
 ```
 $ ts-node setMessage.ts

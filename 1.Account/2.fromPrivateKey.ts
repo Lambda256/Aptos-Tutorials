@@ -1,7 +1,10 @@
 import { Account, Ed25519PrivateKey } from "@aptos-labs/ts-sdk";
+import dotenv from "dotenv";
+dotenv.config({ path: "../.env" });
 
-const privateKey = "input_your_private_key"; // 0x12345...
-const ed25519Scheme = new Ed25519PrivateKey(privateKey);
+const PRIVATE_KEY = process.env.PRIVATE_KEY; // 0x12345...
+if (!PRIVATE_KEY) throw new Error("Check your .env file");
+const ed25519Scheme = new Ed25519PrivateKey(PRIVATE_KEY);
 const account = Account.fromPrivateKey({ privateKey: ed25519Scheme });
 
 console.log("your account :", account);

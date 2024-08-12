@@ -96,6 +96,7 @@ $ aptos init --network testnet
 ```
 
 After that, input the private key of the owner account for the message module.
+**You must use the Private Key of the account that deployed the Message Module for initialization, as the same account is required to interact with the Message Module.**
 
 ```
 Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]

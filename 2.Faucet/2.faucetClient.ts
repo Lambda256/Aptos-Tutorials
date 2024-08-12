@@ -3,10 +3,14 @@ import {
   AptosFaucetClient,
   FundRequest,
 } from "@aptos-labs/aptos-faucet-client";
+import dotenv from "dotenv";
+dotenv.config({ path: "../.env" });
+const API_KEY = process.env.API_KEY;
 
 const config = new AptosConfig({
-  fullnode: "your_Nodit_Aptos_testnet_node_endpoint",
-  indexer: "your_Nodit_Aptos_testnet_indexer_endpoint",
+  network: Network.TESTNET,
+  fullnode: `https://aptos-testnet.nodit.io/${API_KEY}/v1`,
+  indexer: `https://aptos-testnet.nodit.io/${API_KEY}/v1/graphql`,
 });
 
 const aptos = new Aptos(config);

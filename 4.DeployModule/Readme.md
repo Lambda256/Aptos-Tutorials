@@ -16,8 +16,16 @@ You can learn more details about this tutorial by clicking the link below.
 
 - Initialize profile:
 
+> **Note:**
+>
+> If you enter the Private Key of the Aptos account you used during initialization, you can retrieve and use that account. If you don’t have an existing account, you can proceed with initialization without entering a Private Key, and a new account will be created for you. In either case, entering the obtained Private Key into the .env file will allow you to conveniently follow the tutorial.
+
 ```
 $ aptos init --network testnet
+```
+
+```
+Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]
 ```
 
 - Modify the Move.toml:
@@ -37,6 +45,12 @@ rev = "mainnet"
 subdir = "aptos-move/framework/aptos-framework"
 
 [dev-dependencies]
+```
+
+- Modify the .env:
+
+```
+MESSAGE_MODULE_OWNER_ADDRESS=input_your_module_owner_address_here
 ```
 
 <br>
