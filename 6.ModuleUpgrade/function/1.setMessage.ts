@@ -12,7 +12,6 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY; // 0x12345...
 const MESSAGE_MODULE_OWNER_ADDRESS = process.env.MESSAGE_MODULE_OWNER_ADDRESS;
 if (!PRIVATE_KEY || !API_KEY || !MESSAGE_MODULE_OWNER_ADDRESS)
   throw new Error("Check your .env file");
-let message = "Input_your_Message";
 
 const config = new AptosConfig({
   fullnode: `https://aptos-testnet.nodit.io/${API_KEY}/v1`,
@@ -24,11 +23,12 @@ const ed25519Scheme = new Ed25519PrivateKey(PRIVATE_KEY);
 const ownerAccount = Account.fromPrivateKey({
   privateKey: ed25519Scheme,
 });
+const message = "Input_your_Message";
 
-(async (ownerAccount: Account, message: string) => {
+(async () => {
   try {
     const transaction = await aptos.transaction.build.simple({
-      sender: ownerAccount.accountAddress.toString(),
+      sender: MESSAGE_MODULE_OWNER_ADDRESS,
       data: {
         function:
           // You should change the module_owner_address to your Message module owner address.
@@ -56,4 +56,4 @@ const ownerAccount = Account.fromPrivateKey({
   } catch (error) {
     console.error(error);
   }
-})(ownerAccount, message);
+})();

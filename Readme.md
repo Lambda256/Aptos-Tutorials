@@ -123,3 +123,6 @@ Commands:
   update      Update the CLI or other tools it depends on
   help        Print this message or the help of the given subcommand(s)
 ```
+
+**Set up your .env**
+To simplify the tutorial execution, several variables have been declared in the .env file located in the root directory. Assign appropriate values to each field and proceed with the tutorial easily.

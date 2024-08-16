@@ -24,8 +24,9 @@ const senderAccount = Account.fromPrivateKey({
   privateKey: ed25519Scheme,
 });
 const receiverAddress = Account.generate().accountAddress.toString();
+const amount = 10_000_000;
 
-(async (senderAccount: Account, receiverAddress: string, amount: number) => {
+(async () => {
   try {
     const senderAddress = senderAccount.accountAddress.toString();
     const transaction = await aptos.transaction.build.simple({
@@ -62,4 +63,4 @@ const receiverAddress = Account.generate().accountAddress.toString();
   } catch (error) {
     console.error(error);
   }
-})(senderAccount, receiverAddress, 10_000_000);
+})();

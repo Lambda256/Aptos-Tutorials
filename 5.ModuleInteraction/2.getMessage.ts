@@ -1,17 +1,11 @@
-import {
-  Account,
-  Aptos,
-  AptosConfig,
-  Ed25519PrivateKey,
-} from "@aptos-labs/ts-sdk";
+import { Aptos, AptosConfig } from "@aptos-labs/ts-sdk";
 
 import dotenv from "dotenv";
 dotenv.config({ path: "../.env" });
 
 const API_KEY = process.env.API_KEY;
-const PRIVATE_KEY = process.env.PRIVATE_KEY; // 0x12345...
 const MESSAGE_MODULE_OWNER_ADDRESS = process.env.MESSAGE_MODULE_OWNER_ADDRESS;
-if (!PRIVATE_KEY || !API_KEY || !MESSAGE_MODULE_OWNER_ADDRESS)
+if (!API_KEY || !MESSAGE_MODULE_OWNER_ADDRESS)
   throw new Error("Check your .env file");
 
 const config = new AptosConfig({
@@ -20,17 +14,11 @@ const config = new AptosConfig({
 });
 
 const aptos = new Aptos(config);
-const ed25519Scheme = new Ed25519PrivateKey(PRIVATE_KEY);
-const ownerAccount = Account.fromPrivateKey({
-  privateKey: ed25519Scheme,
-});
 
-const ownerAddress = ownerAccount.accountAddress.toString();
-
-(async (address: string) => {
+(async () => {
   try {
     const result = await aptos.getAccountResource({
-      accountAddress: address,
+      accountAddress: MESSAGE_MODULE_OWNER_ADDRESS,
       // You should change the module_owner_address to your Message module owner address.
       // check the .env
       resourceType: `${MESSAGE_MODULE_OWNER_ADDRESS}::message::Message`, //0x1::aptos_account::Account
@@ -39,4 +27,4 @@ const ownerAddress = ownerAccount.accountAddress.toString();
   } catch (error) {
     console.error(error);
   }
-})(ownerAddress);
+})();

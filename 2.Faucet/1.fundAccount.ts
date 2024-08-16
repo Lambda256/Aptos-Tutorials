@@ -14,7 +14,7 @@ const config = new AptosConfig({
 const aptos = new Aptos(config);
 const address = "input_your_account_address";
 
-(async (address: string) => {
+(async () => {
   try {
     const getFaucet = await aptos.fundAccount({
       accountAddress: address,
@@ -29,4 +29,4 @@ const address = "input_your_account_address";
   } catch (error) {
     console.error(error);
   }
-})(address);
+})();

@@ -26,16 +26,15 @@ const senderAccount = Account.fromPrivateKey({
 });
 const amount: number = 100_000_000_000; // change amount to mint
 
-(async (senderAccount: Account, amount: number) => {
+(async () => {
   try {
-    const senderAddress = senderAccount.accountAddress.toString();
     const transaction = await aptos.transaction.build.simple({
-      sender: senderAddress,
+      sender: FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS,
       data: {
         // You should change the module_owner_address to your module owner address.
         function: `${FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS}::fungible_asset::mint`, //0x1::aptos_account::transfer
         // mint function requires to_address and amount as arguments
-        functionArguments: [senderAddress, amount],
+        functionArguments: [FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS, amount],
       },
     });
 
@@ -57,4 +56,4 @@ const amount: number = 100_000_000_000; // change amount to mint
   } catch (error) {
     console.error(error);
   }
-})(senderAccount, amount);
+})();

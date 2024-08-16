@@ -28,18 +28,21 @@ const senderAccount = Account.fromPrivateKey({
 });
 
 const receiverAddress = Account.generate().accountAddress.toString();
-const amount: number = 1000; // change amount to transfer
+const amount: number = 100_000; // change amount to transfer
 
-(async (senderAccount: Account, receiverAddress: string, amount: number) => {
+(async () => {
   try {
-    const senderAddress = senderAccount.accountAddress.toString();
     const transaction = await aptos.transaction.build.simple({
-      sender: senderAddress,
+      sender: FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS,
       data: {
         // You should change the module_owner_address to your module owner address.
         function: `${FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS}::fungible_asset::transfer`, //0x1::aptos_account::transfer
         // transfer function requires from_address and to_address and amount as arguments
-        functionArguments: [senderAddress, receiverAddress, amount],
+        functionArguments: [
+          FUNGIBLE_TOKEN_MODULE_OWNER_ADDRESS,
+          receiverAddress,
+          amount,
+        ],
       },
     });
 
@@ -61,4 +64,4 @@ const amount: number = 1000; // change amount to transfer
   } catch (error) {
     console.error(error);
   }
-})(senderAccount, receiverAddress, amount);
+})();

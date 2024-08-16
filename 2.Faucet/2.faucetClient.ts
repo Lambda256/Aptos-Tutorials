@@ -19,11 +19,11 @@ const faucetClient = new AptosFaucetClient({
 });
 const address = "input_your_account_address";
 
-(async (address: string) => {
+(async () => {
   try {
     const request: FundRequest = {
       amount: 100_000_000,
-      address,
+      address: address,
     };
     const [getFaucet] = (await faucetClient.fund.fund({ requestBody: request }))
       .txn_hashes;
@@ -39,4 +39,4 @@ const address = "input_your_account_address";
   } catch (error) {
     console.error(error);
   }
-})(address);
+})();
