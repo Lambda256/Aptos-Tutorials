@@ -129,5 +129,6 @@ To simplify the tutorial execution, several variables have been declared in the 
 
 ## Additional Resources
 
-- [Nodit Documentation](https://developer.nodit.io/docs/set-up-for-tutorials)
-- [Aptos SDK](https://aptos.dev/en/build/sdks/ts-sdk)
+Please refer to the link below for the full document related to the tutorial.
+
+- [Nodit Aptos Tutorials Document](https://developer.nodit.io/docs/set-up-for-tutorials)
