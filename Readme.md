@@ -126,3 +126,8 @@ Commands:
 
 **Set up your .env**
 To simplify the tutorial execution, several variables have been declared in the .env file located in the root directory. Assign appropriate values to each field and proceed with the tutorial easily.
+
+## Additional Resources
+
+- [Nodit Documentation](https://developer.nodit.io/docs/set-up-for-tutorials)
+- [Aptos SDK](https://aptos.dev/en/build/sdks/ts-sdk)
