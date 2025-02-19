@@ -5,12 +5,11 @@ Hello world! Welcome to the Nodit Aptos Tutorials!
 Nodit Aptos Tutorials are structured as follows:
 
 1. Creating an Account
-2. Receiving Faucet
-3. Sending APT Coin
-4. Deploying a Module
-5. Interacting with the Module
-6. Upgrading the Module
-7. Issuing a Fungible Asset
+2. Sending APT Coin
+3. Deploying a Module
+4. Interacting with the Module
+5. Upgrading the Module
+6. Issuing a Fungible Asset
 
 By going through these steps, you will understand and conveniently use the Aptos blockchain. Learn Aptos with Nodit and create your Aptos Dapp using the Aptos Node and Indexer provided by Nodit!
 
