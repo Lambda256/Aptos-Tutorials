@@ -20,7 +20,7 @@ You can learn more details about this tutorial by clicking the link below.
 > If you enter the Private Key of the Aptos account you used during initialization, you can retrieve and use that account. If you don’t have an existing account, you can proceed with initialization without entering a Private Key, and a new account will be created for you. In either case, entering the obtained Private Key into the .env file will allow you to conveniently follow the tutorial.
 
 ```
-$ aptos init --network testnet
+$ aptos init --network testnet --skip-faucet
 ```
 
 ```
@@ -36,7 +36,8 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-  ownerAddress = "input_your_account_in_.aptos/config.yaml"
+ownerAddress = "input_your_account_in_.aptos/config.yaml"
+
 [dev-addresses]
 
 [dependencies.AptosFramework]
