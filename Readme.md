@@ -79,17 +79,6 @@ $ npm install @aptos-labs/ts-sdk
 <br>
 <br>
 
-**Install Aptos Faucet Client**
-
-Install the Aptos Faucet Client provided by the Aptos Foundation using Node.js. This allows users to receive faucet tokens in Aptos Testnet and Devnet environments. You can install it by entering the following command in the terminal:
-
-```
-$ npm install @aptos-labs/aptos-faucet-client
-```
-
-<br>
-<br>
-
 **Install Aptos CLI**
 
 Aptos provides various methods for installing the CLI tailored to different operating environments. Click the link below to install the Aptos CLI for your operating system.
