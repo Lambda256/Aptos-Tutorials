@@ -10,6 +10,7 @@ Nodit Aptos Tutorials are structured as follows:
 4. Interacting with the Module
 5. Upgrading the Module
 6. Issuing a Fungible Asset
+7. Webhook Example
 
 By going through these steps, you will understand and conveniently use the Aptos blockchain. Learn Aptos with Nodit and create your Aptos Dapp using the Aptos Node and Indexer provided by Nodit!
 
@@ -74,17 +75,6 @@ Install the TypeScript SDK provided by the Aptos Foundation using Node.js. The T
 
 ```
 $ npm install @aptos-labs/ts-sdk
-```
-
-<br>
-<br>
-
-**Install Aptos Faucet Client**
-
-Install the Aptos Faucet Client provided by the Aptos Foundation using Node.js. This allows users to receive faucet tokens in Aptos Testnet and Devnet environments. You can install it by entering the following command in the terminal:
-
-```
-$ npm install @aptos-labs/aptos-faucet-client
 ```
 
 <br>
